@@ -1,0 +1,25 @@
+<view class="al-grade-field">
+  <view class="al-grade-field-txt-wrap" style="{{txtWrap}}">
+    <text>{{title}}</text>
+  </view>
+  <view class="al-grade-field-img-wrap" style="{{imgWrap}}">
+    <image src="/image/icon_star_y.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}}" data-grade="1"></image>
+    <image src="/image/icon_star_y.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}} display:{{grade==2||grade>2?'inline-block':'none'}}" data-grade="2"></image>
+    <image src="/image/icon_star.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}} display:{{grade>1?'none':'inline-block'}}" data-grade="2"></image>
+    <image src="/image/icon_star_y.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}} display:{{grade==3||grade>3?'inline-block':'none'}}" data-grade="3"></image>
+    <image src="/image/icon_star.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}} display:{{grade>2?'none':'inline-block'}}" data-grade="3"></image>
+    <image src="/image/icon_star_y.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}} display:{{grade==4||grade>4?'inline-block':'none'}}" data-grade="4"></image>
+    <image src="/image/icon_star.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}} display:{{grade>3?'none':'inline-block'}}" data-grade="4"></image>
+    <image src="/image/icon_star_y.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}} display:{{grade==5?'inline-block':'none'}}" data-grade="5"></image>
+    <image src="/image/icon_star.png" class="al-grade-field-img" catchtap="handleSelect"
+           style="{{imgStyle}} display:{{grade>4?'none':'inline-block'}}" data-grade="5"></image>
+  </view>
+</view>
